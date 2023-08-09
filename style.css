@@ -1,0 +1,180 @@
+/* ===============================  Página Completa e Scrollbar  =============================== */
+
+body{
+    background:linear-gradient(to left, #282826, black);
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #1d1d1c;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #bf9322;
+}
+
+
+/* ===============================  Sport Club Corinthians Paulista 2012 + Imagens  =============================== */
+
+.center{
+    display: flex;
+    padding-left: 50px;
+    padding-top: 20px;
+    margin: 10px;
+}
+
+.titulo{
+    color: white;
+    font-weight: bold;
+    font-size:large;
+    text-transform: uppercase;
+    padding-right: 250px;
+    padding-left: 0px;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#linkedin{
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 180%;
+}
+#insta{
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 215%;
+}
+
+ #nome_programador{
+    color: white;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 85%;
+    padding: 0px;
+
+ }
+
+/* ===============================   Rotação dos Cards   =============================== */
+
+.front, .back{
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all 1.5s;
+    cursor: pointer;
+}
+.back{
+    transform:rotateY(-180deg);
+    text-align: left;
+    font-size: medium;
+}
+.jogador:hover .front{
+    transform: rotateY(180deg)
+}
+.jogador:hover .back{
+    transform: rotateY(0);
+}
+.goleiro:hover .front{
+    transform: rotateY(180deg)
+}
+.goleiro:hover .back{
+    transform: rotateY(0);
+}
+
+/* ===============================   Cards de todos   =============================== */
+
+.posicao{
+    color: #bf9322;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 1px;
+}
+
+.goleiro{
+    border-radius: 5px;
+    background-color: white;
+    border-radius: 20px;
+    width: 180px;
+    height: 380px;
+    box-shadow: 0 5px 40px #bf9322;
+    margin: 60px;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.jogador{
+    border-radius: 5px;
+    background-color: black;
+    border-radius: 20px;
+    width: 180px;
+    height: 380px;
+    box-shadow: 0 5px 40px #bf9322;
+    margin: 60px;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+#cp_imagem{
+    top:0;
+    float: right;
+    margin-right: 15px;
+  }
+
+/* ===============================   Cards dos Atacantes   =============================== */
+
+.atacantesContainer{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+
+/* ===============================   Cards dos Meias   =============================== */
+
+.meiasContainer{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+/* ===============================   Cards dos Defensores   =============================== */
+
+.defensoresContainer{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+/* ===============================   Card do Gigante   =============================== */
+
+.goleiroContainer{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
